@@ -13,7 +13,7 @@ var addConstraint = function () {
     var count = document.getElementById("variable_count").value;
     var p = "";
     for (var i = 0; i < count; i++) {
-        p += ("+(<input class='coefficient' id='a_" + (row + 1) + "_" + (i + 1) + "'" + " type='text'/>)*x" + (i + 1));
+        p += ("+(<input class='coefficient' id='a_" + (row + 1) + "_" + (i + 1) + "'" + " type='text'/>)*x<sup>" + (i + 1)+"</sup>");
     }
     p += "<select><option value='equal'>=</option><option value='gequal'>>=</option><option value='sequal'><=</option></select><input class='coefficient' id='b_" + (row + 1) +" type='text'/><br>";
     row++;
