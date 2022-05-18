@@ -95,3 +95,16 @@ input {
 .item div input {
     width: 50px;
 }
+
+.item button {
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}

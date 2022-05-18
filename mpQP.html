@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Բազմապարամետրական</title>
+    <link rel="stylesheet" href="content/style/style.css">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="item"><span>Փոփոխականների քանակ</span></div>
+            <div class="item">
+                <div><input id='variable_count' type="number" placeholder="Փոփոխականների քանակ" value="2" /></div>
+            </div>
+            <div class="item"><span>Փոփոխականների անուն</span></div>
+            <div class="item">
+                <div><input id='variable_count' type="text" placeholder="Փոփոխականների անուն" value="x" /></div>
+            </div>
+            <div class="item"><span>Պարամետրերի քանակ</span></div>
+            <div class="item">
+                <div><input id='parameter_count' type="number" placeholder="Պարամետրերի քանակ" value="2" /></div>
+            </div>
+            <div class="item"><span>Դիսկրետների քանակ</span></div>
+            <div class="item">
+                <div><input id='discret_count' type="number" placeholder="Դիսկրետների քանակ" value="3" /></div>
+            </div>
+        </div>
+        <button onclick="createObjectFunction()">GO</button>
+        <br>
+        <h1>Պարամետրերի տվյալներ</h1>
+        <div id='parameter_values'></div>
+        <h1>Նպատակային ֆունկցիա</h1>
+        <p id="object"></p>
+        <h1>Սահմանափակումներ</h1>
+        <button onclick="addConstraint()">Ավելացնել սահմանափակում</button>
+        <div id="constraint"></div>
+    </div>
+    <div><button onclick="solve()">Լուծել խնդիրը</button></div>
+    <script src="sripts/index.js"></script>
+</body>
+
+</html>
