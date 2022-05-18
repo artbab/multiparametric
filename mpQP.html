@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <h1>Բազմապարամետրական քառակուսային ծրագրավորման խնդիր</h1>
     <div>
         <div class="container">
             <div class="item"><span>Փոփոխականների քանակ</span></div>
@@ -27,16 +28,18 @@
         </div>
         <button onclick="createObjectFunction()">GO</button>
         <br>
-        <h1>Պարամետրերի տվյալներ</h1>
-        <div id='parameter_values'></div>
-        <h1>Նպատակային ֆունկցիա</h1>
-        <p id="object"></p>
-        <h1>Սահմանափակումներ</h1>
-        <button onclick="addConstraint()">Ավելացնել սահմանափակում</button>
-        <div id="constraint"></div>
+        <div id="solution" class="hidden">
+            <h1>Պարամետրերի տվյալներ</h1>
+            <div id='parameter_values'></div>
+            <h1>Նպատակային ֆունկցիա</h1>
+            <p id="object"></p>
+            <h1>Սահմանափակումներ</h1>
+            <button onclick="addConstraint()">Ավելացնել սահմանափակում</button>
+            <div id="constraint"></div>
+            <div><button onclick="solve()">Լուծել խնդիրը</button></div>
+        </div>
     </div>
-    <div><button onclick="solve()">Լուծել խնդիրը</button></div>
-    <script src="sripts/index.js"></script>
+    <script src="sripts/indexQP.js"></script>
 </body>
 
 </html>
