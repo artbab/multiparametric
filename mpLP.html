@@ -1,38 +1,38 @@
 <html>
 
 <head>
-    <title>Բազմապարամետրական</title>
+    <title>Multiparametric</title>
     <link rel="stylesheet" href="content/style/style.css">
 </head>
 
 <body>
-    <h1>Բազմապարամետրական գծային ծրագրավորման խնդիր</h1>
+    <h1>MULTIPARAMETRIC LINEAR PROGRAMMING PROBLEM</h1>
     <div>
         <div class="container">
-            <div class="item"><span>Փոփոխականների քանակ</span></div>
+            <div class="item"><span>Count of variables</span></div>
             <div class="item">
-                <div><input id='variable_count' type="number" placeholder="Փոփոխականների քանակ" value="2" /></div>
+                <div><input id='variable_count' type="number" placeholder="Count of variables" value="2" /></div>
             </div>
-            <div class="item"><span>Պարամետրերի քանակ</span></div>
+            <div class="item"><span>Count of parameters</span></div>
             <div class="item">
-                <div><input id='parameter_count' type="number" placeholder="Պարամետրերի քանակ" value="2" /></div>
+                <div><input id='parameter_count' type="number" placeholder="Count of parameters" value="2" /></div>
             </div>
-            <div class="item"><span>Դիսկրետների քանակ</span></div>
+            <div class="item"><span>Count of discrets</span></div>
             <div class="item">
-                <div><input id='discret_count' type="number" placeholder="Դիսկրետների քանակ" value="3" /></div>
+                <div><input id='discret_count' type="number" placeholder="Count of discrets" value="3" /></div>
             </div>
         </div>
-        <button onclick="createObjectFunction()">Սկսել</button>
+        <button onclick="createObjectFunction()">Start</button>
         <br>
         <div id="solution" class="hidden">
-            <h1>Պարամետրերի տվյալներ</h1>
+            <h1>Parameters info</h1>
             <div id='parameter_values'></div>
-            <h1>Նպատակային ֆունկցիա</h1>
+            <h1>Object function</h1>
             <p id="object"></p>
-            <h1>Սահմանափակումներ</h1>
-            <button onclick="addConstraint()">Ավելացնել սահմանափակում</button>
+            <h1>Constraints</h1>
+            <button onclick="addConstraint()">Add constraint</button>
             <div id="constraint"></div>
-            <div><button onclick="solve()">Լուծել խնդիրը</button></div>
+            <div><button onclick="solve()">Solve the problem</button></div>
         </div>
     </div>
     <script src="sripts/index.js"></script>
