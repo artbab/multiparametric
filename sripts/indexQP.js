@@ -11,7 +11,7 @@ var createObjectFunction = function () {
     for (var i = 0; i < p_count; i++) {
         parameters += '<div class="grid-item">' + (i + 1) + '</div><div class="grid-item"><div><input type="text" /></div></div><div class="grid-item"><div><input type="text" /></div></div><div class="grid-item"><div><input type="text" /></div></div>';
     }
-    parameters = '<div class="grid-container"><div class="grid-item"></div><div class="grid-item">Պարամետրի անվանումը</div><div class="grid-item">Սկզբնական մոտարկման կենտրոնը</div><div class="grid-item">Սահմանը</div>'
+    parameters = '<div class="grid-container"><div class="grid-item"></div><div class="grid-item">Parameter name</div><div class="grid-item">Initial approximation center</div><div class="grid-item">Border</div>'
         + parameters + '</div>';
     document.getElementById("parameter_values").innerHTML = parameters;
 
