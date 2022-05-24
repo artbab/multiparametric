@@ -72,7 +72,7 @@ input {
 }
 
 .container {
-    width: 300px;
+    width: 500px;
     display: grid;
     margin: auto;
     gap: 10px;
@@ -97,7 +97,7 @@ input {
 }
 
 .item button {
-    font-size: 30px;
+    font-size: 20px;
     height: 100%;
     width: 100%;
     cursor: pointer;
